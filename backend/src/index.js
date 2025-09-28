@@ -1,8 +1,8 @@
-import { app } from './app.js'
 import dotenv from 'dotenv'
-import { initDatabase } from './db/init.js'
-
 dotenv.config()
+
+import { app } from './app.js'
+import { initDatabase } from './db/init.js'
 
 try {
   await initDatabase()
